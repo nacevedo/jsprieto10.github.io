@@ -1,3 +1,5 @@
+
+"use strict";
 $("#profile").click(function(){
   var x = $("#profile");
   if (x.attr("src")==='img/perfil5.jpg'){
