@@ -5,20 +5,18 @@
     var url = $(this).attr('href');
     var target = $(url);
     var offset = 70;
-    if (url)
-      console.log(url);
-        $('html, body').animate({
-          scrollTop: (target.offset().top - 70 )
-        }, 1000);
-        return true;
+        $('html, body').animate({scrollTop: (target.offset().top - 70 )}, 1000);
+        history.replaceState({}, document.title, ".");
       });
+
+
+
 
   // Closes responsive menu when a scroll trigger link is clicked
   $('.js-scroll-trigger').click(function() {
     $('.navbar-collapse').collapse('hide');
   });
 
-  // Activate scrollspy to add active class to navbar items on scroll
 
   // Collapse Navbar
   var navbarCollapse = function() {
