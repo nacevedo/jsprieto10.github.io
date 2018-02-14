@@ -14,4 +14,4 @@ v.0.1
 Juan Sebastian Prieto
 
 ## Licencía
-La licencía para este proyecto es la licencía MIT, mire ee the [LICENSE.md](LICENSE.md) para más detalles
+La licencía para este proyecto es la licencía MIT. click  [LICENSE.md](LICENSE.md) para más detalles
