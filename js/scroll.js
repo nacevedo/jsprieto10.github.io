@@ -1,24 +1,24 @@
-"use strict"; // Start of use strict
+"use strict"; // Comienza el uso del modo estricto
 
-
+// función que realiza la animación para pasar de una sección a otra
   $('a.js-scroll-trigger[href*="#"]').click(function() {
     var url = $(this).attr('href');
     var target = $(url);
     var offset = 70;
         $('html, body').animate({scrollTop: (target.offset().top - 70 )}, 1000);
         history.replaceState({}, document.title, ".");
-      });
+      })
 
 
 
 
-  // Closes responsive menu when a scroll trigger link is clicked
+  // cierra el navbar si esta abierto cuando esta en movil
   $('.js-scroll-trigger').click(function() {
     $('.navbar-collapse').collapse('hide');
   });
 
 
-  // Collapse Navbar
+  // Cambia la clase del navbar cuando se hace scroll de más de 5 para que cambie el tipo de navbar
   var navbarCollapse = function() {
     if ($("#mainNav").offset().top > 50) {
       $("#mainNav").addClass("navbar-shrink");
@@ -26,9 +26,8 @@
       $("#mainNav").removeClass("navbar-shrink");
     }
   };
-  // Collapse now if page is not at top
-  navbarCollapse();
-  // Collapse the navbar when page is scrolled
+
+  // Ejecuta la función navbarCollapse cuando se hace scroll
   $(window).scroll(navbarCollapse);
 
-// End of use strict
+// fin del uso estricto
