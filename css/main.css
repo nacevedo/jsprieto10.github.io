@@ -1,3 +1,4 @@
+/** aqui comienza el estilo a las cosas más globales */
 body {
   overflow-x: hidden;
   font-family: 'Roboto Slab';
@@ -28,6 +29,7 @@ h6 {
   font-weight: 700;
   font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
+
 
 section {
   padding: 100px 0;
@@ -88,7 +90,8 @@ section h3.section-subheading {
 img::selection {
   background: transparent;
 }
-
+/** aqui comienza el estilo a las cosas más globales */
+/** aqui los estilos los estilos para la navegación */
 #mainNav .navbar-toggler {
   font-size: 12px;
   right: 0;
@@ -136,7 +139,9 @@ img::selection {
     background-color: #212529;
   }
 }
+/** aqui acaba los  para la navegación */
 
+/** aqui van los estilos para el header */
 header.masthead {
   text-align: center;
   color: white;
@@ -211,6 +216,7 @@ header.masthead .intro-text .intro-heading {
   }
 }
 
+/** aqui van los estilos para el timeline */
 .timeline {
   padding: 0;
   list-style: none;
@@ -333,6 +339,9 @@ header.masthead .intro-text .intro-heading {
     padding: 0 100px 20px 20px;
   }
 }
+/** aqui acaba el timeline */
+
+/** aqui margenes para tags que sobraron en llamar antes */
 
 section#skills{
   margin-top: 100px;

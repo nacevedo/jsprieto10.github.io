@@ -1,12 +1,11 @@
-"use strict";
+"use strict"; // comienzo del uso estricto
 
-(function(){
-      emailjs.init("user_CzQmkPEa1uH2iEAMTzt2a");
-   })();
+ // iniciar las comunicación con el servidor
+(function(){emailjs.init("user_CzQmkPEa1uH2iEAMTzt2a"); })();
 
+
+// servidor para mandar correo de una manera más rápida
 $('#send').click(function(){
-  console.log('pruebaa');
-  console.log(document.title);
   var name = $('#nombre');
   var email = $('#email');
   var phone = $('#celular');
