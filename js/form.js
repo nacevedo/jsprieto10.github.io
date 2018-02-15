@@ -15,6 +15,8 @@ $('#send').click(function(){
   emailjs.send("gmail","template_BZGiJMnO",{nombre: name.val(), correo: email.val(), celular: phone.val(), mensaje: message.val()})
   .then(function(response) {
     // se ejecuta de manera sincronica esta función que vacia los elementos del arreglo
+   
+   //Nicolás Acevedo: Revisar por que hacen falta dos clicks para que se borre el formulario, no se borra apenas se da "send por lo que parece que no se estuviera enciando el correo. 
     name = $('#nombre').val('');
     email = $('#email').val('');
     phone = $('#celular').val('');
